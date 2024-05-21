@@ -1,0 +1,222 @@
+/* usamos el asterisco para la fuente se aplique a todo el documento */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* cambiamos el ancho de la fuente del titulo */
+header center h1 {
+    font-weight: 300  ;
+}
+
+/* redondeamos las esquinas de los bordes y elegimos el nombre de la animacion,
+ el tiempo en el que hara toda la animacion, y si queremos que se repita */
+header center{
+    border-radius: 2px;
+    animation: rgb 1s infinite;
+}
+
+header button {
+    background-color: #1089c2;
+
+}
+
+header button:active {
+    background-color: aquamarine;
+
+}
+
+/* utilizamos el keyframe para que cambie de color los bordes del titulo */
+@keyframes rgb {
+    0% , 100%{
+        border: 5px solid #0033ff;
+    }
+    10% {
+        border: 5px solid #168dc4;
+    }
+    20% {
+        border: 5px solid #1089c2;
+    }
+    30% {
+        border: 5px solid #011794;
+    }
+    40% {
+        border: 5px solid #031a9e;
+    }
+    60% {
+        border: 5px solid #0427ee;
+    }
+    80% {
+        border: 5px solid #0026ff;
+    }
+}
+
+/* aplicamos al body el color de fondo y el color de la fuente */
+body {
+    color:black;
+    background-color: whitesmoke;
+}
+
+
+img {
+    width: 200px;
+    height: 200x;
+}
+
+h1 {
+    border: 5px black ;
+}
+
+button {
+    border-color: #0427ee;
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-right: 4%;
+    margin-top: 5%;
+
+}
+
+a {
+    color: #292928;
+}
+
+a:hover{
+    color: green;
+}
+
+#destacados {
+    background-color: #292928;
+    color: white;
+    height: 300px;
+    width: 100%;
+    overflow: scroll; /* Es la barra que permite deslizar*/
+    border: 5px solid mediumblue; /* Es el borde del apartado de los productos destacados*/
+    animation: rgb 1s infinite;
+}
+
+#celular1 {
+    margin-left: 30px;
+}
+
+#celular2 {
+    margin-left: 50px;
+}
+
+#monitor1 {
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+#celular3 {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+#monitor2 {
+    margin-left: 60px;
+    margin-top: 40px;
+}
+
+#lista {
+    background-color: rgb(248, 233, 199);
+    border: 10px solid;
+    animation: rgb 1s infinite;
+    margin-top: 100px;
+    font-size: 35px;
+}
+
+#celulares {
+    margin-top: 400px;
+}
+#celulares h1 {
+    text-align: center;
+    font-size: 50px;
+}
+#A24 {
+    margin-left: 30px;
+}
+#S23 {
+    margin-left: 30px;
+    margin-top: 40px;
+}
+#S22ultra {
+    margin-left: 20px;
+}
+#flip4 {
+    margin-left: 40px;
+}
+#fold5 {
+    margin-left: 60px;
+}
+
+#monitores {
+    margin-top: 100px;
+}
+
+#monitores h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+/* usamos este id para acomodar una imagen */
+#monitorgamer {
+    margin-left: 5%;
+    height: 160px;
+}
+
+.dispositivos {
+    color: white;
+    background-color: #292928 ;
+    border: 4px solid #011794;
+    overflow-y: scroll; /* agregamos una barra vertival para desplazarnos */
+    width: 100%;
+    height: 220px;
+    position: relative; /* sirve para acomodar los elementos como creamos mas conveniente */
+    animation: rgb 1s infinite;
+}
+
+.left {
+    float: left; /* hace que los elementos se acomoden automaticamente a la izquierda */
+}
+
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        scale: 25%;
+    }
+    70% {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+.imagen0 {
+    position: relative;
+    float: left;
+    left: 1000px;
+    view-timeline-name: --imagen;
+    view-timeline-axis: block;
+
+    animation-timeline: --imagen;
+    animation-name: show;
+}
+.imagen1 {
+    position: relative;
+    float: left;
+    left: 500px;
+    view-timeline-name: --imagen;
+    view-timeline-axis: block;
+
+    animation-timeline: --imagen;
+    animation-name: show;
+}
+.imagen2 {
+    position: relative;
+    float: left;
+    left: 500px;
+    view-timeline-name: --imagen;
+    view-timeline-axis: block;
+
+    animation-timeline: --imagen;
+    animation-name: show;
+    margin-bottom: 200px;
+}

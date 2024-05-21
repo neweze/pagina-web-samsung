@@ -1,0 +1,32 @@
+@keyframes show {
+    0% {
+        opacity: 0;
+        scale: 25%;
+    }
+    70% {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+p {
+    font-size: 200px;
+    margin: 200px 150px 100px 200px;
+}
+
+img {
+    position: relative;
+    float: left;
+    height: 500px;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+}
+
+.imagen1 {
+    left: 400px;
+}
+.imagen0 {
+    left: 750px;
+}
